@@ -23,7 +23,7 @@
     <relativePath>../../hadoop-project</relativePath>
   </parent>
   <artifactId>hadoop-aws</artifactId>
-  <version>2.7.3</version>
+  <version>2.7.3-coveo-3</version>
   <name>Apache Hadoop Amazon Web Services support</name>
   <description>
     This module contains code to support integration with Amazon Web Services.
@@ -120,6 +120,12 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <!-- Avoid transitive dependency to pull an older version -->
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk-simpleworkflow</artifactId>
       <scope>compile</scope>
     </dependency>
 
