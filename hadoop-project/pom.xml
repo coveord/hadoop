@@ -651,13 +651,13 @@
       <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk</artifactId>
-        <version>1.11.160</version>
+        <version>1.11.238</version>
       </dependency>
       <dependency>
         <!-- Avoid transitive dependency to pull an older version -->
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk-simpleworkflow</artifactId>
-        <version>1.11.160</version>
+        <version>1.11.238</version>
       </dependency>
       <dependency>
         <groupId>org.apache.mina</groupId>
