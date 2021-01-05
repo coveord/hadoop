@@ -18,7 +18,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.hadoop</groupId>
   <artifactId>hadoop-main</artifactId>
-  <version>3.4.0-SNAPSHOT</version>
+  <version>3.4.0-coveo</version>
   <description>Apache Hadoop Main</description>
   <name>Apache Hadoop Main</name>
   <packaging>pom</packaging>
@@ -36,18 +36,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 
   <distributionManagement>
     <repository>
-      <id>${distMgmtStagingId}</id>
-      <name>${distMgmtStagingName}</name>
-      <url>${distMgmtStagingUrl}</url>
+      <id>CoveoCloud</id>
+      <name>CoveoCloud-releases</name>
+      <url>https://maven.cloud.coveo.com/artifactory/libs-release-local</url>
     </repository>
     <snapshotRepository>
-      <id>${distMgmtSnapshotsId}</id>
-      <name>${distMgmtSnapshotsName}</name>
-      <url>${distMgmtSnapshotsUrl}</url>
+      <id>CoveoCloud</id>
+      <name>CoveoCloud-snapshots</name>
+      <url>https://maven.cloud.coveo.com/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     <site>
-      <id>apache.website</id>
-      <url>scpexe://people.apache.org/www/hadoop.apache.org/docs/r${project.version}</url>
+      <id>${project.artifactId}</id>
+      <name>${project.artifactId}</name>
+      <url>${project.artifactId}/</url>
     </site>
   </distributionManagement>
 
@@ -63,6 +64,23 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
+    </repository>
+
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>libs-release</name>
+      <url>https://maven.cloud.coveo.com/artifactory/libs-release</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <id>snapshots</id>
+      <name>libs-snapshot</name>
+      <url>https://maven.cloud.coveo.com/artifactory/libs-snapshot</url>
     </repository>
   </repositories>
 
@@ -80,7 +98,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 
   <properties>
     <!-- required as child projects with different version can't use ${project.version} -->
-    <hadoop.version>3.4.0-SNAPSHOT</hadoop.version>
+    <hadoop.version>3.4.0-coveo</hadoop.version>
 
     <distMgmtSnapshotsId>apache.snapshots.https</distMgmtSnapshotsId>
     <distMgmtSnapshotsName>Apache Development Snapshot Repository</distMgmtSnapshotsName>
