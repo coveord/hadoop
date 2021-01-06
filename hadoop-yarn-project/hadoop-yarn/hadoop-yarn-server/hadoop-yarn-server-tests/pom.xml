@@ -19,10 +19,10 @@
   <parent>
     <artifactId>hadoop-yarn-server</artifactId>
     <groupId>org.apache.hadoop</groupId>
-    <version>3.4.0-coveo</version>
+    <version>3.4.0-coveo-5375c4c7</version>
   </parent>
   <artifactId>hadoop-yarn-server-tests</artifactId>
-  <version>3.4.0-coveo</version>
+  <version>3.4.0-coveo-5375c4c7</version>
   <name>Apache Hadoop YARN Server Tests</name>
 
   <properties>
