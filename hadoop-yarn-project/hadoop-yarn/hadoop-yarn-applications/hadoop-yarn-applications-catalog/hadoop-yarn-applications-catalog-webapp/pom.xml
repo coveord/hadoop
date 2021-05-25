@@ -23,7 +23,7 @@
   <parent>
     <artifactId>hadoop-yarn-applications-catalog</artifactId>
     <groupId>org.apache.hadoop</groupId>
-    <version>3.4.0-coveo-5375c4c7</version>
+    <version>3.4.0-coveo-8e4fd7da</version>
   </parent>
 
   <name>Apache Hadoop YARN Application Catalog Webapp</name>

@@ -17,10 +17,10 @@
   <parent>
     <artifactId>hadoop-yarn-server</artifactId>
     <groupId>org.apache.hadoop</groupId>
-    <version>3.4.0-coveo-5375c4c7</version>
+    <version>3.4.0-coveo-8e4fd7da</version>
   </parent>
   <artifactId>hadoop-yarn-server-sharedcachemanager</artifactId>
-  <version>3.4.0-coveo-5375c4c7</version>
+  <version>3.4.0-coveo-8e4fd7da</version>
   <name>Apache Hadoop YARN SharedCacheManager</name>
 
   <properties>
